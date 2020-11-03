@@ -1,27 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electric Weather Balloon</title>
+    <title>My Weather Balloon</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="row text-center">
             <div class="col">
-                <h1>The Electric Weather Balloon</h1>
+                <h1 id="title">My Weather Balloon</h1>
             </div>
         </div>
         <div class="row text-center justify-content-center">
             <div class="col-12 col-md-6">
-                <input type="text" placeholder="Search for a city" class="form-control">
+                <input type="text" placeholder="Search for a city" class="form-control" id="search">
+            </div>
+        </div>
+        <div class="row text-center justify-content-center" id="weather-card">
+            <div class="col-12">
+                <h1 id="city">Minneapolis</h1>
+            </div>
+            <div class="col-12">
+                <h3 id="description">Clear</h1>
+            </div>
+            <div class="col-12">
+                <h1 id="temp">60°f</h1>
+            </div>
+            <div class="col-12 icon-col">
+                <div class="icons-wrapper">
+                    <svg id="sun" class="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M4.069 13h-4.069v-2h4.069c-.041.328-.069.661-.069 1s.028.672.069 1zm3.034-7.312l-2.881-2.881-1.414 1.414 2.881 2.881c.411-.529.885-1.003 1.414-1.414zm11.209 1.414l2.881-2.881-1.414-1.414-2.881 2.881c.528.411 1.002.886 1.414 1.414zm-6.312-3.102c.339 0 .672.028 1 .069v-4.069h-2v4.069c.328-.041.661-.069 1-.069zm0 16c-.339 0-.672-.028-1-.069v4.069h2v-4.069c-.328.041-.661.069-1 .069zm7.931-9c.041.328.069.661.069 1s-.028.672-.069 1h4.069v-2h-4.069zm-3.033 7.312l2.88 2.88 1.415-1.414-2.88-2.88c-.412.528-.886 1.002-1.415 1.414zm-11.21-1.415l-2.88 2.88 1.414 1.414 2.88-2.88c-.528-.411-1.003-.885-1.414-1.414zm2.312-4.897c0 2.206 1.794 4 4 4s4-1.794 4-4-1.794-4-4-4-4 1.794-4 4zm10 0c0 3.314-2.686 6-6 6s-6-2.686-6-6 2.686-6 6-6 6 2.686 6 6z" />
+                        </svg>
+
+                </div>
+            </div>
+            <div class="col-6">
+                <p id="date">Today - <span id="date-value">11/2/2020</span></p>
+            </div>
+            <div class="col-6">
+                <div id="high-low">
+                    <span id="high">70</span>
+                    <span id="low">50</span>
+                </div>
             </div>
         </div>
     </div>
-    
+
     <script src="main.js"></script>
 </body>
+
 </html>

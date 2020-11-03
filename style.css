@@ -1,9 +1,79 @@
-input:focus{
-    box-shadow: none !important;
-    border-color: #ced4da !important;
+body{
+    background-color: azure;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(24, 24, 24);
 }
 
-.form-control{
+#title, #city, #temp{
+    font-family: 'Abril Fatface', cursive;
+}
+
+#title{
+    text-transform: capitalize;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 64px;
+}
+
+#search{
     max-width: 400px;
     margin: auto;
+    margin-bottom: 100px;
+    border-radius: 10px;
+}
+
+#search:focus{
+    box-shadow: none;
+    border-color: #ced4da;
+}
+
+#weather-card{
+    background: rgb(238,238,238);
+    background: radial-gradient(circle, rgba(252, 252, 252, 0.6) 0%, rgba(230, 230, 230, 0.6) 100%);
+    max-width: 500px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px rgba(41, 41, 41, 0.05);
+}
+
+#city{
+    text-transform: capitalize;
+    font-size: 50px;
+    margin: 20px auto 10px auto;
+}
+
+#description{
+    margin: 10px auto
+}
+
+#temp{
+    font-size: 100px;
+    margin: 10px auto
+}
+
+.icons-wrapper{
+    margin: 10px auto 30px auto;
+}
+
+.icons{
+    height: 80px;
+    width: auto;
+}
+
+.icon-col{
+    border-bottom: 1px solid black;
+}
+
+#date{
+    text-align: left;
+    margin: 10px auto 20px 20px;
+}
+
+#high-low{
+    text-align: right;
+    margin: 10px 20px 20px auto;
+}
+
+#high{
+    font-weight: 700;
 }
