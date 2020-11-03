@@ -1,0 +1,9 @@
+input:focus{
+    box-shadow: none !important;
+    border-color: #ced4da !important;
+}
+
+.form-control{
+    max-width: 400px;
+    margin: auto;
+}
